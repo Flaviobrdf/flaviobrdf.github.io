@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Host</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header id="home">
+        <div class="fixed-top menu">
+            <div class="row p-2 ">
+
+                <div class="container-fluid col">
+                    <div class="d-flex align-items-center">
+                        <a onclick="" href="#">
+                            <img src="./img/icon.png" class="icon" alt="icone-host">
+                        </a>
+                    </div>                    
+                </div>
+
+                <div class="container-fluid col">
+                    <p id="logon" style="color: #fff; margin-left: 50px; font-weight: bold; font-size: 25px;"></p>
+                </div>
+
+
+                <div class="container-fluid col">
+                    <nav class="navbar navbar-expand-lg">
+                        <div class="btn-group btn-group-sm ms-auto ">
+                            <button onclick="scrollToSection('home')" class="btn text-white">HOME</button>
+                            <button onclick="scrollToSection('planos')" class="btn text-white">PLANOS</button>
+                            <button onclick="scrollToSection('contato')" type="button"
+                                class="btn text-white">CONTATO</button>
+                            <button id="entrar-sair" type="button" class="btn btn-success">LOGIN</button>
+                        </div>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+        <div class="centralizar">
+            <h1>hDC Host</h1>
+            <h3>Os melhores planos para qualquer tipo de projeto</h3>
+        </div>
+
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="container-fluid col text-center" style="min-width: 200px;">
+                <img src="./img/segur.jpg" alt="icone-finans">
+                <h5>Segurança</h5>
+                <p>A fins vai além do básico e permite que você faça controles incríveis, essenciais para suas
+                    finanças. Simples como tem que ser!</p>
+            </div>
+            <div class="container-fluid col text-center" style="min-width: 200px;">
+                <img src="./img/veloc.jpg" alt="icone-finans">
+                <h5>Velocidade</h5>
+                <p>Tempo é dinheiro! Em segundos, você tem tudo sob controle e aproveite seu tempo com o que
+                    realmente importa pra você!</p>
+            </div>
+            <div class="container-fluid col text-center" style="min-width: 200px;">
+                <img src="./img/suporte.jpg" alt="icone-finans">
+                <h5>Suporte</h5>
+                <p class="">Dúvidas? Perguntas? Nosso suporte super legal ajuda você! A gente tá aqui pra resolver seus
+                    problemas e deixar sua vida bem mais fácil!</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="planos" class=" planos container mt-5">
+        <div class="text-center">
+            <h2>Planos e Preços</h2>
+            <p>Selecione o plano perfeito para você</p>
+        </div>
+        <div class="row">
+            <div class="container-fluid col text-center p-4" onclick="changeLinkColors(this)" style="min-width: 200px;">
+                    <div class="d-flex justify-content-center ">
+                        <div class="circle">
+                            <a class="planoEscolha full-width-link">R$15/mês</a>
+                        </div>
+                    </div>
+                    <h5 class="padr">PADRÃO</h5>
+                    <div class="plano">
+                        <p>2GB de espaço em disco</p>
+                        <p>10 sub-dominios</p>
+                        <p>25 contas de e-mail</p>
+                        <p>C-panel</p>
+                        <p>Suporte 24/7</p>
+                        <div class=" text-white w-100 p-2">
+                            <a class="planoEscolha full-width-link w-100"> Selecionar</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="container-fluid col text-center p-4" onclick="changeLinkColors(this)" style="min-width: 200px;">
+                    <div class="d-flex justify-content-center ">
+                        <div class="circle">
+                            <a class="planoEscolha full-width-link">R$30/mês</a>
+                        </div>
+                    </div>
+                    <h5 class="padr">DEDICADO</h5>
+                    <div class="plano">
+                        <p>5GB de espaço em disco</p>
+                        <p>20 sub-dominios</p>
+                        <p>50 contas de e-mail</p>
+                        <p>C-panel</p>
+                        <p>Suporte 24/7</p>
+                        <div class=" text-white w-100 p-2">
+                            <a class="planoEscolha full-width-link w-100"> Selecionar</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="container-fluid col text-center p-4" onclick="changeLinkColors(this)" style="min-width: 200px;">
+                    <div class="d-flex justify-content-center ">
+                        <div class="circle">
+                            <a class="planoEscolha full-width-link">R$50/mês</a>
+                        </div>
+                    </div>
+                    <h5 class="padr">DEDICADO PLUS</h5>
+                    <div class="plano">
+                        <p>10GB de espaço em disco</p>
+                        <p>100 sub-dominios</p>
+                        <p>100 contas de e-mail</p>
+                        <p>C-panel</p>
+                        <p>Suporte 24/7</p>
+                        <div class=" text-white w-100 p-2">
+                            <a class="planoEscolha full-width-link w-100"> Selecionar</a>
+                        </div>
+                    </div>
+            </div>
+            <div class="container-fluid col text-center p-4" onclick="changeLinkColors(this)" style="min-width: 200px;">
+                    <div class="d-flex justify-content-center ">
+                        <div class="circle">
+                            <a class="planoEscolha full-width-link">R$100/mês</a>
+                        </div>
+                    </div>
+                    <h5 class="padr">CLOUD</h5>
+                    <div class="plano">
+                        <p>20GB de espaço em disco</p>
+                        <p>200 sub-dominios</p>
+                        <p>2 contas de e-mail</p>
+                        <p>C-panel</p>
+                        <p>Suporte 24/7</p>
+                        <div class=" text-white w-100 p-2">
+                            <a class="planoEscolha full-width-link w-100"> Selecionar</a>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="buscarDominio">
+        <div class="container-fluid col text-center p-4" style="max-width: 800px;">
+            <h1>Buscar um domínio</h1>
+            <p class="text-white">Veja se o domínio que você quer está disponível</p>
+            <div class="container ">
+                <input id="dominio" type="text" class="form-control" placeholder="Digite seu domínio desejado">
+            </div>
+            <div class="p-4">
+                <button id="botaoDominio" onclick="" type="button" class="btn btn-success">Buscar Domínio</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contato" id="contato">
+        <div class="container-fluid col text-center p-4" style="max-width: 800px;">
+            <div class="text-center">
+                <h2>Entre em contato</h2>
+                <p>Mande uma mensagem para nós conversarmos sobre a melhor hospedagem para seu negócio</p>
+            </div>
+            <div class="">
+                <div class="input-group text-center">
+                    <input id="sNome" type="text" class="form-control m-4" placeholder="Seu nome">
+                    <input id="sEmail" type="text" class="form-control m-4" placeholder="Seu e-mail">
+                </div>
+                <div class="form-group p-4">
+                    <textarea id="sTexto" type="text" placeholder="Digite aqui sua mensagem" class="form-control" id="Textarea1"
+                        rows="5"></textarea>
+                </div>
+            </div>
+            <div class="p-4">
+                <button id="sSend" onclick="" type="button" class="btn btn-success w-25">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="text-center m-4">© Copyright 2024 hDC Host - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
